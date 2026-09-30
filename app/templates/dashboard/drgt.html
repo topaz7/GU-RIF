@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}DRGT workspace · Gulu RIF-MIS{% endblock %}
+{% block content %}
+<h1 class="h3 mb-3">DRGT administrator workspace</h1>
+<p class="text-muted">Signed in as {{ current_user.full_name }}. Call management, screening and review coordination will be added next.</p>
+<div class="row g-3">
+  <div class="col-md-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h2 class="h6">Calls</h2>
+        <p class="small mb-0 text-muted">Configure and publish RIF cycles, dates, categories and criteria.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h2 class="h6">Applications</h2>
+        <p class="small mb-0 text-muted">Monitor submissions and eligibility screening queues.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h2 class="h6">Audit</h2>
+        <p class="small mb-0 text-muted">Privileged account changes and sign-in events are recorded in the audit trail.</p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

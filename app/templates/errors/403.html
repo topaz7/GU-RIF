@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}Access denied · Gulu RIF-MIS{% endblock %}
+{% block content %}
+<div class="alert alert-warning">
+  <h1 class="h4">Access denied</h1>
+  <p class="mb-0">Your account does not have permission to open this workspace.</p>
+</div>
+<a class="btn btn-primary" href="{{ url_for('workspace_root') }}">Return to your workspace</a>
+{% endblock %}

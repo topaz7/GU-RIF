@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}Applicant workspace · Gulu RIF-MIS{% endblock %}
+{% block content %}
+<h1 class="h3 mb-3">Applicant workspace</h1>
+<p class="text-muted">Signed in as {{ current_user.full_name }}. Applications, calls and project reporting will appear here in later increments.</p>
+<div class="row g-3">
+  <div class="col-md-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h2 class="h6">My applications</h2>
+        <p class="small mb-0 text-muted">Draft, submit and track proposals against a published RIF call.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h2 class="h6">Notifications</h2>
+        <p class="small mb-0 text-muted">Submission receipts, screening results and decision notices.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h2 class="h6">Profile</h2>
+        <p class="small mb-0 text-muted">Reusable researcher details for team membership on applications.</p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

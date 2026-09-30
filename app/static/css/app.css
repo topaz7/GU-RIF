@@ -1,0 +1,71 @@
+:root {
+  --rif-navy: #0b3d5c;
+  --rif-gold: #c9a227;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f4f6f8;
+  color: #1b242c;
+}
+
+main {
+  flex: 1;
+}
+
+.rif-header {
+  background: var(--rif-navy);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.brand-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.5rem;
+  border-radius: 0.25rem;
+  background: var(--rif-gold);
+  color: #1b242c;
+  font-size: 0.8rem;
+}
+
+.btn-primary {
+  background: var(--rif-navy);
+  border-color: var(--rif-navy);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background: #082c43;
+  border-color: #082c43;
+}
+
+.btn-warning {
+  background: var(--rif-gold);
+  border-color: var(--rif-gold);
+  color: #1b242c;
+}
+
+.hero {
+  background: #fff;
+}
+
+.letter-spacing {
+  letter-spacing: 0.08em;
+  color: var(--rif-navy);
+  font-weight: 600;
+}
+
+.rif-footer {
+  background: #e8edf1;
+  color: #4a5560;
+  font-size: 0.875rem;
+}

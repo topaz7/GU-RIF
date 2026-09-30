@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}Not found · Gulu RIF-MIS{% endblock %}
+{% block content %}
+<div class="alert alert-secondary">
+  <h1 class="h4">Page not found</h1>
+  <p class="mb-0">The requested page does not exist.</p>
+</div>
+<a class="btn btn-primary" href="{{ url_for('home') }}">Back to home</a>
+{% endblock %}

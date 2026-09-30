@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block title %}Register · Gulu RIF-MIS{% endblock %}
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-md-6 col-lg-5">
+    <div class="card shadow-sm">
+      <div class="card-body p-4">
+        <h1 class="h4 mb-3">Create applicant account</h1>
+        <p class="text-muted small">Self-registration creates an Applicant / Principal Investigator account. DRGT administrator accounts are issued by the institution.</p>
+        <form method="post" novalidate>
+          {{ form.hidden_tag() }}
+          <div class="mb-3">
+            {{ form.full_name.label(class="form-label") }}
+            {{ form.full_name(class="form-control") }}
+            {% for error in form.full_name.errors %}<div class="text-danger small">{{ error }}</div>{% endfor %}
+          </div>
+          <div class="mb-3">
+            {{ form.email.label(class="form-label") }}
+            {{ form.email(class="form-control") }}
+            {% for error in form.email.errors %}<div class="text-danger small">{{ error }}</div>{% endfor %}
+          </div>
+          <div class="mb-3">
+            {{ form.password.label(class="form-label") }}
+            {{ form.password(class="form-control") }}
+            {% for error in form.password.errors %}<div class="text-danger small">{{ error }}</div>{% endfor %}
+          </div>
+          <div class="mb-3">
+            {{ form.confirm_password.label(class="form-label") }}
+            {{ form.confirm_password(class="form-control") }}
+            {% for error in form.confirm_password.errors %}<div class="text-danger small">{{ error }}</div>{% endfor %}
+          </div>
+          {{ form.submit(class="btn btn-primary w-100") }}
+        </form>
+        <p class="mt-3 mb-0 small">
+          Already registered? <a href="{{ url_for('auth.login') }}">Sign in</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
